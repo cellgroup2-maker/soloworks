@@ -1,0 +1,10 @@
+{
+  "name": "soloworks-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SoloWorks (솔로웍스): outsourcing for solo founders. Korean and English landing pages, quote request form and team dashboard.",
+  "scripts": {
+    "dev": "node scripts/dev-server.js 3000",
+    "check": "node scripts/check.js"
+  }
+}

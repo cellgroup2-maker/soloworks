@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="610" viewBox="0 0 760 610" role="img" aria-label="SoloWorks decorative 07 sw soft geometry"><defs>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06142C"/><stop offset=".38" stop-color="#084FC9"/><stop offset=".75" stop-color="#55BFFF"/><stop offset="1" stop-color="#E5F8FF"/></linearGradient>
+ <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF591F"/><stop offset=".5" stop-color="#FFA836"/><stop offset="1" stop-color="#FFE6CE"/></linearGradient>
+ <linearGradient id="orangeBright" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#FFA826"/><stop offset=".55" stop-color="#FF591F"/><stop offset="1" stop-color="#DB2E13"/></linearGradient>
+ <linearGradient id="navy" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#084FC9"/><stop offset="1" stop-color="#06142C"/></linearGradient>
+ <radialGradient id="orb"><stop stop-color="#FFBE79" stop-opacity=".96"/><stop offset=".38" stop-color="#FF591F" stop-opacity=".7"/><stop offset=".8" stop-color="#084FC9" stop-opacity=".3"/><stop offset="1" stop-color="#084FC9" stop-opacity="0"/></radialGradient>
+ <filter id="glow" x="-50%" y="-70%" width="200%" height="240%"><feGaussianBlur stdDeviation="11"/></filter>
+ </defs><rect x="68" y="106" width="345" height="320" rx="108" fill="url(#blue)" opacity=".63"/>
+<rect x="240" y="240" width="405" height="300" rx="98" fill="url(#orange)" opacity=".48"/>
+<path d="M535 94 C 400 35 257 89 192 191 C 122 304 181 360 295 371" stroke="{SKY}" stroke-width="8" opacity=".42" fill="none"/>
+<circle cx="654" cy="118" r="16" fill="{OR}"/></svg>

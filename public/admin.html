@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-links="clean">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quote requests | SoloWorks</title>
+<meta name="sw-links" content="clean">
+<meta name="sw-lang" content="en">
+<meta name="description" content="SoloWorks team dashboard.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B1F38">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SoloWorks">
+<meta property="og:title" content="Quote requests | SoloWorks">
+<meta property="og:description" content="SoloWorks team dashboard.">
+<meta property="og:image" content="/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/brand/soloworks/02_SW_Main_Logo/favicon_180.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body data-page="admin" data-side="talent">
+<a class="skip" href="#main">Skip to content</a>
+<header class="admin-top">
+  <div class="shell admin-top-row">
+    <a class="brand" href="/" aria-label="SoloWorks home"><img class="brand-symbol" src="/assets/brand/soloworks/02_SW_Main_Logo/soloworks_sw_primary.svg" alt="" width="50" height="28"><span class="brand-text"><b>Quote requests</b><small>SoloWorks team dashboard</small></span></a>
+    <div class="admin-top-actions"><span class="admin-source" data-source></span><button type="button" class="btn btn-ghost btn-sm" data-logout hidden>Sign out</button></div>
+  </div>
+</header>
+<main id="main" class="admin-main">
+  <section class="shell admin-login" data-login>
+    <div class="form-card admin-login-card">
+      <form class="flow" data-login-form novalidate>
+        <h1>Team dashboard</h1>
+        <p class="muted">Sign in with the admin password from your Vercel project settings (ADMIN_PASSWORD).</p>
+        <div class="field"><label for="a-pass">Password</label><input type="password" id="a-pass" autocomplete="current-password" required></div>
+        <p class="field-error" data-login-error hidden></p>
+        <div class="flow-nav"><span class="spacer"></span><button class="btn btn-ink" type="submit" data-login-btn>Sign in</button></div>
+      </form>
+    </div>
+  </section>
+  <section class="shell admin-app" data-app hidden>
+    <div class="admin-stats" data-stats></div>
+    <div class="admin-toolbar">
+      <div class="seg" role="tablist" aria-label="Records" hidden><button type="button" role="tab" aria-selected="true" data-tab="projects">Quote requests</button></div>
+      <div class="admin-filters">
+        <div class="field search-input"><label class="sr-only" for="a-q">Search</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><input type="search" id="a-q" data-q placeholder="Search company, name, email, request"></div>
+        <div class="field"><label class="sr-only" for="a-status">Status</label><select id="a-status" data-status></select></div>
+        <div class="field"><label class="sr-only" for="a-cat">Type of work</label><select id="a-cat" data-cat></select></div>
+        <button type="button" class="btn btn-ghost btn-sm" data-refresh>Refresh</button>
+        <button type="button" class="btn btn-ghost btn-sm" data-export>Export CSV</button>
+      </div>
+    </div>
+    <p class="admin-count" data-count aria-live="polite"></p>
+    <div class="admin-list" data-list></div>
+  </section>
+  <div class="drawer" data-drawer hidden>
+    <div class="drawer-scrim" data-close></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer-head"><h2 id="drawer-title" data-drawer-title></h2><button type="button" class="drawer-close" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+      <div class="drawer-body" data-drawer-body></div>
+    </div>
+  </div>
+</main>
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<script src="/assets/js/options.js" defer></script><script src="/assets/js/site.js" defer></script><script src="/assets/js/admin.js" defer></script>
+</body>
+</html>
