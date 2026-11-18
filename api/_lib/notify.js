@@ -89,8 +89,8 @@ async function confirmToSender(kind, data, ref) {
   const name = (data.contact_name || '').trim();
   const work = O.label(O.services, data.service, en ? 'en' : 'ko');
   const text = en
-    ? `Hi ${name.split(' ')[0]},\n\nThanks for your quote request for ${work.toLowerCase()}. Your reference is ${ref}.\n\nDuring business hours, your project manager will get in touch right away to agree the scope and price. Nothing is charged until you agree. You can pay by corporate card, and the card receipt is issued instantly.\n\nIf you want to add anything, just reply to this email.\n\nSoloWorks`
-    : `${name}님, 안녕하세요.\n\n${work} 견적 요청이 접수되었습니다. 접수 번호는 ${ref}입니다.\n\n영업시간에는 담당 PM이 바로 연락드려 범위와 금액을 맞춰 드립니다. 동의하시기 전까지 비용은 발생하지 않으며, 결제는 법인카드로 하실 수 있고 카드 영수증이 즉시 발급됩니다.\n\n추가로 전달하실 내용이 있으면 이 메일에 회신해 주세요.\n\nSoloWorks (솔로웍스)`;
+    ? `Hi ${name.split(' ')[0]},\n\nThanks for your quote request for ${work.toLowerCase()}. Your reference is ${ref}.\n\nDuring business hours, your project manager will get in touch right away to agree the scope and price. Nothing is charged until you agree. You can pay by card, and the card receipt is issued instantly.\n\nIf you want to add anything, just reply to this email.\n\nSoloWorks`
+    : `${name}님, 안녕하세요.\n\n${work} 견적 요청이 접수되었습니다. 접수 번호는 ${ref}입니다.\n\n영업시간에는 담당 PM이 바로 연락드려 범위와 금액을 맞춰 드립니다. 동의하시기 전까지 비용은 발생하지 않으며, 결제는 카드로 하실 수 있고 카드 영수증이 즉시 발급됩니다.\n\n추가로 전달하실 내용이 있으면 이 메일에 회신해 주세요.\n\nSoloWorks (솔로웍스)`;
   const html = text.split('\n').map((l) => (l ? `<p style="margin:0 0 8px;font:15px/1.6 Arial,sans-serif;color:#0B1F38">${escHtml(l)}</p>` : '')).join('');
   try {
     await sendEmail({ to: data.email, subject: en ? `We received your quote request [${ref}]` : `견적 요청이 접수되었습니다 [${ref}]`, html, text, replyTo: (process.env.NOTIFY_EMAIL || 'thlee@udimpact.ai').split(',')[0] });

@@ -23,7 +23,7 @@ Link straight to the form with `/#contact`. Links like `/?service=test_edit#cont
 **Colour code:** orange is the SoloWorks accent (buttons, prices, highlights); navy with aqua is the secondary pairing. Orange buttons use navy text for contrast.
 
 ### Copy rule
-This site speaks to clients only, as SoloWorks. It does not say where or by whom the work is done, does not mention any freelancer panel or delivery team, and does not mention UD IMPACT. The only place the operating company is named is the privacy policy, which Korean law requires. The flow promised on the site is: request, PM gets in touch right away (business hours), work starts, delivery. Payment is by corporate card, with the card receipt as proof; the site does not mention tax invoices.
+This site speaks to clients only, as SoloWorks. It does not say where or by whom the work is done, does not mention any freelancer panel or delivery team, and does not mention UD IMPACT. The only place the operating company is named is the privacy policy, which Korean law requires. The flow promised on the site is: request, PM gets in touch right away (business hours), work starts, delivery. Payment is by card, with the card receipt as proof; the site does not mention tax invoices.
 
 ---
 
