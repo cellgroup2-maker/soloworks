@@ -895,3 +895,17 @@ ul, ol { margin: 0; padding: 0; }
 @media (max-width: 359px) {
   .header-cta .btn { padding: 0 10px; font-size: .84rem; }
 }
+
+/* ---------- Floating KakaoTalk channel button (all screen sizes) ---------- */
+.kakao-fab { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 45; display: inline-flex; align-items: center; gap: 8px; min-height: 52px; padding: 0 18px 0 14px; border-radius: 999px; background: #FEE500; color: #191919; font-weight: 700; font-size: .95rem; text-decoration: none; box-shadow: 0 8px 24px rgba(11, 31, 56, .22); transition: transform .2s var(--ease), box-shadow .2s; }
+.kakao-fab[hidden] { display: none; }
+.kakao-fab svg { width: 24px; height: 24px; flex: none; }
+.kakao-fab:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(11, 31, 56, .28); }
+.kakao-fab:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+@media (max-width: 640px) {
+  /* icon only on phones so it doesn't cover content */
+  .kakao-fab { width: 56px; height: 56px; padding: 0; justify-content: center; }
+  .kakao-fab span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .kakao-fab svg { width: 28px; height: 28px; }
+}
+@media (prefers-reduced-motion: reduce) { .kakao-fab { transition: none; } .kakao-fab:hover { transform: none; } }

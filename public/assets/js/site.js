@@ -155,4 +155,10 @@
     }
   }
 
+
+  /* ---------- KakaoTalk channel button: shown only once a channel link is set in the page ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('[data-kakao]'), function (a) {
+    var href = (a.getAttribute('href') || '').trim();
+    if (/^https:\/\//.test(href)) a.hidden = false;
+  });
 })();
