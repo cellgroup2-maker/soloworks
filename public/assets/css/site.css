@@ -870,3 +870,15 @@ ul, ol { margin: 0; padding: 0; }
   .footer-links { gap: 10px 20px; }
   .q-step { min-height: 0; }
 }
+
+/* ---------- Phone: bigger, easier-to-tap service options in the quote form (branding cell feedback) ---------- */
+@media (max-width: 640px) {
+  .qcard { padding: 0; }
+  .qcard > .qform, .form-card > .qform:first-child { padding: 22px 16px 20px; gap: 20px; }
+  .qform .q-title, .qform .q-title span { font-size: 1.45rem; }
+  .q-tiles { gap: 12px; }
+  .q-tile span { min-height: 76px; padding: 18px 20px; border-radius: 16px; gap: 4px; align-content: center; border-width: 1.5px; }
+  .q-tile span b { font-size: 1.12rem; }
+  .q-tile span small { font-size: .92rem; }
+  .q-nav [data-next], .q-nav [data-submit] { min-height: 56px; font-size: 1.05rem; }
+}
