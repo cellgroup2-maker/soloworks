@@ -154,4 +154,21 @@
       }, 1800);
     }
   }
+
+  /* ---------- Phone: floating "free quote" button ----------
+     Shows once the hero button has scrolled away, hides while the quote form is on screen. */
+  var sticky = document.querySelector('[data-sticky-cta]');
+  var heroCta = document.querySelector('.hero-actions .btn');
+  var contact = document.getElementById('contact');
+  if (sticky && heroCta && contact && 'IntersectionObserver' in window) {
+    var heroGone = false, formShown = false, link = sticky.querySelector('a');
+    var update = function () {
+      var on = heroGone && !formShown;
+      sticky.classList.toggle('is-on', on);
+      sticky.setAttribute('aria-hidden', on ? 'false' : 'true');
+      if (link) link.tabIndex = on ? 0 : -1;
+    };
+    new IntersectionObserver(function (e) { heroGone = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; update(); }).observe(heroCta);
+    new IntersectionObserver(function (e) { formShown = e[0].isIntersecting; update(); }, { threshold: 0.05 }).observe(contact);
+  }
 })();
