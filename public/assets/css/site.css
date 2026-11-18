@@ -856,3 +856,17 @@ ul, ol { margin: 0; padding: 0; }
 .about-min .stats-row { width: 100%; margin-top: 14px; }
 .about-photo { margin: 0; min-width: 0; }
 .about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r-lg); filter: grayscale(1); }
+
+/* ---------- Phone fixes (Nov 2026) ---------- */
+@media (max-width: 860px) {
+  /* Contact: copy above the form, both full width */
+  .contact-grid2 { grid-template-columns: minmax(0, 1fr); }
+  .contact-copy .lead { max-width: none; }
+}
+@media (max-width: 640px) {
+  /* Less empty space between sections on small screens */
+  :root { --section: clamp(52px, 2.5rem + 5vw, 72px); }
+  .hero-client .hero-flow img { height: 96px; }
+  .footer-links { gap: 10px 20px; }
+  .q-step { min-height: 0; }
+}
