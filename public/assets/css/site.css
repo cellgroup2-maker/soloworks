@@ -883,12 +883,15 @@ ul, ol { margin: 0; padding: 0; }
   .q-nav [data-next], .q-nav [data-submit] { min-height: 56px; font-size: 1.05rem; }
 }
 
-/* ---------- Phone: floating "free quote" button ---------- */
-.sticky-cta { display: none; }
-@media (max-width: 640px) {
-  .sticky-cta { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); transform: translateY(110%); opacity: 0; transition: transform .25s ease, opacity .25s ease; pointer-events: none; }
-  .sticky-cta.is-on { transform: none; opacity: 1; pointer-events: auto; }
-  .sticky-cta .btn { width: 100%; justify-content: center; min-height: 54px; box-shadow: 0 8px 24px rgba(11, 31, 56, .18); }
-  .site-footer, footer { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+/* ---------- Tablet and phone: keep the "free quote" button in the sticky header, next to the menu ---------- */
+@media (max-width: 1180px) {
+  .header-cta { display: flex; margin-left: auto; }
+  .header-cta .lang-switch { display: none; }
+  .menu-btn { margin-left: -14px; } /* sits 10px from the header button */
 }
-@media (max-width: 640px) and (prefers-reduced-motion: reduce) { .sticky-cta { transition: none; } }
+@media (max-width: 640px) {
+  .header-cta .btn { min-height: 42px; padding: 0 14px; font-size: .9rem; white-space: nowrap; }
+}
+@media (max-width: 359px) {
+  .header-cta .btn { padding: 0 10px; font-size: .84rem; }
+}
