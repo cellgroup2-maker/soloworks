@@ -5,7 +5,7 @@
   'use strict';
   var SW = window.SW || {};
   var API = '/api/register';
-  var CONTACT_EMAIL = 'thlee@udimpact.ai';
+  var CONTACT_EMAIL = 'hello@soloworks.in';
   var esc = SW.esc;
   var LANG = /^ko/i.test(document.documentElement.lang || '') ? 'ko' : 'en';
   var O = window.SW_OPTIONS || { services: [] };

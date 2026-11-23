@@ -57,6 +57,7 @@ Vercel → your project → **Settings → Environment Variables**. Add these, t
 | `ADMIN_PASSWORD` | Yes, for /admin | at least 8 characters |
 | `RESEND_API_KEY` | Recommended | from [resend.com](https://resend.com) → API Keys |
 | `NOTIFY_EMAIL` | Optional | `thlee@udimpact.ai` (default). Comma-separate several addresses |
+| `REPLY_TO` | Optional | where client replies to confirmation emails go. Defaults to `hello@soloworks.in` |
 | `RESEND_FROM` | Optional | `SoloWorks <hello@your-domain.com>`, a sender on a domain you verified in Resend. When set, people who submit also get a confirmation email in their language |
 | `SEND_CONFIRMATIONS` | Optional | `false` to switch confirmation emails off |
 | `SLACK_WEBHOOK_URL` | Optional | Incoming Webhook URL for #soloworks-leads (api.slack.com/apps → Create New App → Incoming Webhooks → Add New Webhook → pick #soloworks-leads) |

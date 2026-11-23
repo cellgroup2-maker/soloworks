@@ -913,3 +913,4 @@ ul, ol { margin: 0; padding: 0; }
 /* ---------- Footer: company details (business registration) ---------- */
 .footer-biz { display: grid; gap: 4px; margin-bottom: 10px; color: var(--on-navy-2); font-size: .84rem; line-height: 1.5; }
 .footer-biz b { color: var(--on-navy); font-weight: 700; font-size: .9rem; }
+.footer-biz a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
