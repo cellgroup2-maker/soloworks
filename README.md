@@ -56,7 +56,7 @@ Vercel → your project → **Settings → Environment Variables**. Add these, t
 | `SUPABASE_SERVICE_ROLE_KEY` | Yes | `eyJhbGciOi…` |
 | `ADMIN_PASSWORD` | Yes, for /admin | at least 8 characters |
 | `RESEND_API_KEY` | Recommended | from [resend.com](https://resend.com) → API Keys |
-| `NOTIFY_EMAIL` | Optional | `thlee@udimpact.ai` (default). Comma-separate several addresses |
+| `NOTIFY_EMAIL` | Optional | `hello@soloworks.in` (default). Comma-separate several addresses |
 | `REPLY_TO` | Optional | where client replies to confirmation emails go. Defaults to `hello@soloworks.in` |
 | `RESEND_FROM` | Optional | `SoloWorks <hello@your-domain.com>`, a sender on a domain you verified in Resend. When set, people who submit also get a confirmation email in their language |
 | `SEND_CONFIRMATIONS` | Optional | `false` to switch confirmation emails off |

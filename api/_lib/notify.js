@@ -62,7 +62,7 @@ async function notifyTeam(kind, data, ref, extra) {
   const adminUrl = process.env.SITE_URL ? `${process.env.SITE_URL.replace(/\/+$/, '')}/admin` : '';
   const results = {};
 
-  const to = (process.env.NOTIFY_EMAIL || 'thlee@udimpact.ai').split(',').map((s) => s.trim()).filter(Boolean);
+  const to = (process.env.NOTIFY_EMAIL || 'hello@soloworks.in').split(',').map((s) => s.trim()).filter(Boolean);
   const tasks = [];
   if (process.env.RESEND_API_KEY) {
     const html = `<p style="font:15px Arial,sans-serif;color:#0F2A41"><strong>${escHtml(subject)}</strong></p>${htmlTable(r)}` +
