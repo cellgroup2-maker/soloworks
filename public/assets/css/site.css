@@ -909,3 +909,7 @@ ul, ol { margin: 0; padding: 0; }
   .kakao-fab svg { width: 28px; height: 28px; }
 }
 @media (prefers-reduced-motion: reduce) { .kakao-fab { transition: none; } .kakao-fab:hover { transform: none; } }
+
+/* ---------- Footer: company details (business registration) ---------- */
+.footer-biz { display: grid; gap: 4px; margin-bottom: 10px; color: var(--on-navy-2); font-size: .84rem; line-height: 1.5; }
+.footer-biz b { color: var(--on-navy); font-weight: 700; font-size: .9rem; }
