@@ -106,6 +106,11 @@ Spam protection: a hidden honeypot field, a minimum time-on-form check, and full
 - **Styles and colours:** `public/assets/css/site.css`. Colour tokens are at the top.
 - **Fonts:** Pretendard, loaded from jsDelivr (allowed in the Content-Security-Policy in `vercel.json`). If you self-host it later, put the files in `public/assets/fonts/` and remove jsDelivr from the policy.
 
+## Ads: Meta Pixel
+- Pixel `29621998667431074` is in `public/assets/js/meta-pixel.js`, loaded in the `<head>` of every public page (not on `/admin`). It is a separate file because the Content-Security-Policy in `vercel.json` blocks inline scripts; the policy allows `connect.facebook.net` and `www.facebook.com` for it.
+- Events: `PageView` on every page, and `Lead` (with the type of work only, no personal details) after a quote request is sent successfully.
+- The privacy policy (section 5) describes the pixel. If you add another ad tool, update the policy and the CSP the same way.
+
 ## Brand assets
 - `public/assets/brand/soloworks/`: from the SoloWorks brand package. Wordmark (header and footer), SW monogram (dashboard, favicon), the continuous-flow ribbon (hero, with a still image for visitors who turn off motion) and two website elements used as quiet decoration.
 

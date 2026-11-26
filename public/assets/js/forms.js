@@ -359,6 +359,8 @@
         if (res && res.ok) {
           SW.store.del(draftKey);
           renderSuccess(result, data, res);
+          // Ads: count a successful quote request as a Meta "Lead" (no personal details are sent)
+          try { if (window.fbq) window.fbq('track', 'Lead', { content_category: data.service || '' }); } catch (e) {}
           SW.toast(T.toast);
           var again = result.querySelector('[data-another]');
           if (again) again.addEventListener('click', function () {
